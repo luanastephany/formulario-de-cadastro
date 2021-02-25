@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Formulário de Cadastro</title>
+</head>
+
+<body>
+   <div class="campo">
+      <h1 id="titulo">Cadastro de Funcionários</h1>
+      <p id="subtitulo">Complete suas informações abaixo</p>
+   </div>
+
+   <form action="">
+      <fieldset class="grupo">
+         <div class="campo">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required>
+         </div>
+
+         <div class="campo">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome">
+         </div>
+      </fieldset>
+
+      <div class="campo">
+         <label for="email">Email:</label>
+         <input type="email" name="email" id="email">
+      </div>
+
+      <div class="campo">
+         <label for="">Em qual área você atua?</label>
+         <label for="">
+            <input type="radio" name="devweb" value="frontend">Atenção Básica
+         </label>
+
+         <label for=""></label>
+         <input type="radio" name="devweb" value="backend">Atenção Secundária
+
+         <label for=""></label>
+         <input type="radio" name="devweb" value="fulltack">Atenção Terciária
+      </div>
+
+      <div class="campo">
+         <label for="anos">Anos de experiência</label>
+         <select name="senioridade" id="senioridade">
+            <option selected disabled value="">Selecione</option>
+            <option value="">1 a 2 anos</option>
+            <option value="">2 a 5 anos</option>
+            <option value="">Acima de 5 anos</option>
+         </select>
+      </div>
+
+
+      <fieldset class="grupo">
+         <div id="check">
+            <label for="">Selecione as áreas em que você possui experiência:</label><br>
+
+            <input type="checkbox" name="area1" id="cc">
+            <label for="area1">Centro Cirúrgico</label>
+
+            <input type="checkbox" name="area2" id="ps">
+            <label for="area2">PS</label>
+
+            <input type="checkbox" name="area3" id="uti">
+            <label for="area3">UTI</label>
+
+            <input type="checkbox" name="area4" id="ubs">
+            <label for="area4">UBS</label>
+
+            <input type="checkbox" name="area5" id="upa">
+            <label for="area5">UPA</label>
+         </div>
+      </fieldset>
+
+      <div class="campo">
+         <p id="descricao">Conte um pouco sua experiência</p>
+         <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+      </div>
+
+      <button type="submit" class="btn">Concluído</button>
+
+
+
+   </form>
+
+
+</body>
+
+</html>
